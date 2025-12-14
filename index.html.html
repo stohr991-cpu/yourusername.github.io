@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STOHR Investments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="STOHR Logo" class="logo">
+  <h1>STOHR Investment Platform</h1>
+  <p>Smart Investing Made Simple</p>
+</header>
+
+<section class="info">
+  <h2>How It Works</h2>
+  <ul>
+    <li>Minimum Investment: ₹1000</li>
+    <li>Maximum Investment: ₹10,000</li>
+    <li>Profit Sharing: 75% Investor / 25% STOHR</li>
+    <li>Our charge will be only 25% of your profit / In return, you will receive 75% of the profit + your initial capital.</li>
+    <li>Market risk involved</li>
+  </ul>
+</section>
+
+<section class="login">
+  <h2>Create Account / Login</h2>
+
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="register()">Register</button>
+  <br><br>
+  <button onclick="login()">Login</button>
+
+  <p style="font-size:13px;color:gray;">
+    A verification email will be sent after registration.
+  </p>
+</section>
+
+<section class="payment" id="payment" style="display:none;">
+  <h2>Invest Now</h2>
+
+  <input type="number" id="amount" placeholder="Enter Amount (₹1000 - ₹10000)">
+
+  <button onclick="logout()" style="margin-top:15px;background:#888;color:white;">
+  Logout
+</button>
+
+  <p>Choose Payment Method</p>
+
+  <button onclick="payUPI()">Pay via UPI (Google Pay / PhonePe / Paytm)</button>
+
+  <p style="font-size:13px;color:gray;margin-top:10px;">
+    Payments are processed via UPI apps.
+    We do not collect or store UPI PIN or bank details.
+    Investment is subject to market risk.
+  </p>
+</section>
+
+<section class="disclaimer">
+  <h3>Disclaimer</h3>
+  <p>
+    This platform is not SEBI registered. Investment is subject to market risk.
+    Profit is not guaranteed.
+  </p>
+</section>
+
+<footer>
+  <p>Contact: stohr991@gmail.com</p>
+  <p>© 2025 STOHR Investments</p>
+</footer>
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDRhcRybxNd56kStDCLWQdO2G46UhNmkyA",
+  authDomain: "stohr-investments-2299f.firebaseapp.com",
+  projectId: "stohr-investments-2299f",
+  storageBucket: "stohr-investments-2299f.firebasestorage.app",
+  messagingSenderId: "648526154694",
+  appId: "1:648526154694:web:8c8da0883c90ad1c5800c7",
+  measurementId: "G-GWXLXZHRBS"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</body>
+</html>

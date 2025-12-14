@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+header {
+  background: #0b2c4d;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 110px;
+  margin-bottom: 10px;
+}
+
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 25px;
+  background: #0b2c4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #144a80;
+}
+
+.upi-box {
+  background: #e9f0f8;
+  padding: 12px;
+  margin: 15px 0;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+footer {
+  background: #0b2c4d;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #444;
+}
